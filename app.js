@@ -55,4 +55,37 @@ function initMap() {
 	//Associate the styled map with the MapTypeId and set it to display.
 	map.mapTypes.set("styled_map", styledMapType);
 	map.setMapTypeId("styled_map");
+
+	setMarkers(map);
+}
+
+// Data for the markers consisting of a name, a LatLng and a zIndex for the
+// order in which these markers should display on top of each other.
+var markers = [
+	["LocationA", -1.878, -78.178, 4],
+	["LocationB", 41, 8, 5],
+	["LocationC", 43, -76, 3],
+	["LocationD", -3, 14, 2],
+	["LocationE", 48, 22, 1]
+];
+
+// Adding markers to the map
+function setMarkers(map) {
+	for (var i = 0; i < markers.length; i++) {
+		var location = markers[i];
+		var marker = new google.maps.Marker({
+			position: { lat: location[1], lng: location[2] },
+			icon: {
+				path: google.maps.SymbolPath.CIRCLE,
+				scale: 15,
+				strokeColor: "#ffdb5b",
+				strokeOpacity: 0.8,
+				strokeWeight: 1,
+				fillColor: "#ffdb5b",
+				fillOpacity: 0.5
+			},
+			draggable: false,
+			map: map
+		});
+	}
 }
