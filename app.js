@@ -48,7 +48,8 @@ function initMap() {
 	// to the map type control.
 	var map = new google.maps.Map(document.getElementById("map"), {
 		center: { lat: 40, lng: -20 },
-		zoom: 3
+		zoom: 3,
+		disableDefaultUI: true
 	});
 
 	//Associate the styled map with the MapTypeId and set it to display.
