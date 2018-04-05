@@ -5,9 +5,6 @@ body {
 	padding: 0;
 }
 
-#navbar {
-}
-
 /*#cover-page {
 	height: 100%;
 	background-color: white;
@@ -15,4 +12,25 @@ body {
 
 #map {
 	height: 100%;
+	z-index: 1;
+	background-repeat: no-repeat;
+}
+
+#sidenav {
+	width: 200px;
+	height: 100%;
+	background-color: black;
+	opacity: 0.8;
+	z-index: 2;
+	position: absolute;
+}
+
+#sidenav:hover {
+}
+
+.togglebtn {
+	color: white;
+	font-size: 25px;
+	padding: 10px;
+	float: right;
 }

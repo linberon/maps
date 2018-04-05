@@ -66,13 +66,14 @@ var markers = [
 	["LocationB", 41, 8, 5],
 	["LocationC", 43, -76, 3],
 	["LocationD", -3, 14, 2],
-	["LocationE", 48, 22, 1]
+	["LocationE", 47.566, 19.169, 1]
 ];
 
 // Adding markers to the map
 function setMarkers(map) {
 	for (var i = 0; i < markers.length; i++) {
 		var location = markers[i];
+
 		var marker = new google.maps.Marker({
 			position: { lat: location[1], lng: location[2] },
 			icon: {
@@ -89,3 +90,5 @@ function setMarkers(map) {
 		});
 	}
 }
+
+function toggleNav() {}
