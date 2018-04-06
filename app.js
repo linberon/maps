@@ -48,6 +48,8 @@ function initMap() {
 	var map = new google.maps.Map(document.getElementById("map"), {
 		center: { lat: 40, lng: -20 },
 		zoom: 3,
+		minZoom: 3,
+		maxZoom: 4,
 		disableDefaultUI: true
 	});
 
@@ -79,13 +81,37 @@ function setMarkers(map) {
 				path: google.maps.SymbolPath.CIRCLE,
 				scale: 15,
 				strokeColor: "#ffdb5b",
-				strokeOpacity: 0.8,
+				strokeOpacity: 0,
 				strokeWeight: 1,
 				fillColor: "#ffdb5b",
-				fillOpacity: 0.5
+				fillOpacity: 0
 			},
 			draggable: false,
 			map: map
+		});
+
+		google.maps.event.addListener(marker, "mouseover", function() {
+			marker.setIcon({
+				path: google.maps.SymbolPath.CIRCLE,
+				scale: 15,
+				strokeColor: "#ffdb5b",
+				strokeOpacity: 0.8,
+				strokeWeight: 1,
+				fillColor: "#ffdb5b",
+				fillOpacity: 0.8
+			});
+		});
+
+		google.maps.event.addListener(marker, "mouseout", function() {
+			marker.setIcon({
+				path: google.maps.SymbolPath.CIRCLE,
+				scale: 15,
+				strokeColor: "#ffdb5b",
+				strokeOpacity: 0,
+				strokeWeight: 1,
+				fillColor: "#ffdb5b",
+				fillOpacity: 0
+			});
 		});
 	}
 }
