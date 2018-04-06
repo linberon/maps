@@ -1,8 +1,7 @@
 var apiKey = "AIzaSyA8lGn8J49hka - tWs2xrKPzqYuK1_vxx0w";
 
 function initMap() {
-	// Create a new StyledMapType object, passing it an array of styles,
-	// and the name to be displayed on the map type control.
+	// Create a new StyledMapType object, and passing it an array of styles
 	var styledMapType = new google.maps.StyledMapType(
 		[
 			{ elementType: "geometry", stylers: [{ color: "#ebe3cd" }] },
@@ -90,5 +89,3 @@ function setMarkers(map) {
 		});
 	}
 }
-
-function toggleNav() {}

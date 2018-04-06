@@ -17,20 +17,24 @@ body {
 }
 
 #sidenav {
-	width: 200px;
+	width: 20px;
 	height: 100%;
-	background-color: black;
-	opacity: 0.8;
 	z-index: 2;
 	position: absolute;
+	transition: 0.3s;
 }
 
 #sidenav:hover {
+	width: 200px;
+	cursor: pointer;
+	transition: 0.3s;
+	background-color: white;
+	opacity: 0.8;
 }
 
-.togglebtn {
+#togglebtn {
 	color: white;
-	font-size: 25px;
-	padding: 10px;
+	font-size: 15px;
+	padding: 5px;
 	float: right;
 }
