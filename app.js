@@ -58,16 +58,17 @@ function initMap() {
 	map.setMapTypeId("styled_map");
 
 	setMarkers(map);
+	setInfoWindow(map, marker);
 }
 
 // Data for the markers consisting of a name, a LatLng and a zIndex for the
 // order in which these markers should display on top of each other.
 var markers = [
-	["LocationA", -1.878, -78.178, 4],
-	["LocationB", 41, 8, 5],
-	["LocationC", 43, -76, 3],
-	["LocationD", -3, 14, 2],
-	["LocationE", 47.566, 19.169, 1]
+	["Fish", -1.878, -78.178, 4],
+	["Monkey", 41, 8, 5],
+	["Bird", 43, -76, 3],
+	["Bear", -3, 14, 2],
+	["Turtle", 47.566, 19.169, 1]
 ];
 
 // Adding markers to the map
@@ -86,8 +87,9 @@ function setMarkers(map) {
 				fillColor: "#ffdb5b",
 				fillOpacity: 0
 			},
+			map: map,
 			draggable: false,
-			map: map
+			clickable: true
 		});
 
 		google.maps.event.addListener(marker, "mouseover", function() {
@@ -114,4 +116,20 @@ function setMarkers(map) {
 			});
 		});
 	}
+}
+
+var content =
+	'<div id="content">' +
+	'<h1 id="infoTitle">Fish</h1>' +
+	"<p>This fish lives in the sea</p>" +
+	"</div>";
+
+function setInfoWindow(map, marker) {
+	markerContent = new google.maps.InfoWindow({
+		content: "<img></img> " + content + "<a></a>"
+	});
+
+	google.maps.event.addListener(marker, "click", function() {
+		marker.info.open(map, marker);
+	});
 }
