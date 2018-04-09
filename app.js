@@ -126,7 +126,7 @@ var content =
 
 function setInfoWindow(map, marker) {
 	markerContent = new google.maps.InfoWindow({
-		content: "<img></img> " + content + "<a></a>"
+		content: '<img src="#"></img> ' + content + '<a href="#"></a>'
 	});
 
 	google.maps.event.addListener(marker, "click", function() {
