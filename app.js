@@ -1,7 +1,7 @@
 var apiKey = "AIzaSyA8lGn8J49hka - tWs2xrKPzqYuK1_vxx0w";
 
 function initMap() {
-	// Create a new StyledMapType object, and passing it an array of styles
+	// Create a new object, and passing it an array of styles
 	var styledMapType = new google.maps.StyledMapType(
 		[
 			{ elementType: "geometry", stylers: [{ color: "#ebe3cd" }] },
