@@ -1,8 +1,8 @@
-var apiKey = "AIzaSyA8lGn8J49hka - tWs2xrKPzqYuK1_vxx0w";
+let apiKey = "AIzaSyA8lGn8J49hka - tWs2xrKPzqYuK1_vxx0w";
 
 function initMap() {
 	// Create a new object, and passing it an array of styles
-	var styledMapType = new google.maps.StyledMapType(
+	let styledMapType = new google.maps.StyledMapType(
 		[
 			{ elementType: "geometry", stylers: [{ color: "#ebe3cd" }] },
 			{ elementType: "labels", stylers: [{ visibility: "off" }] },
@@ -45,7 +45,7 @@ function initMap() {
 
 	// Create a map object, and include the MapTypeId to add
 	// to the map type control.
-	var map = new google.maps.Map(document.getElementById("map"), {
+	let map = new google.maps.Map(document.getElementById("map"), {
 		center: { lat: 40, lng: -20 },
 		zoom: 3,
 		minZoom: 3,
@@ -63,7 +63,7 @@ function initMap() {
 
 // Data for the markers consisting of a name, a LatLng and a zIndex for the
 // order in which these markers should display on top of each other.
-var markers = [
+let markers = [
 	["Fish", -1.878, -78.178, 4],
 	["Monkey", 41, 8, 5],
 	["Bird", 43, -76, 3],
@@ -73,10 +73,10 @@ var markers = [
 
 // Adding markers to the map
 function setMarkers(map) {
-	for (var i = 0; i < markers.length; i++) {
-		var location = markers[i];
+	for (let i = 0; i < markers.length; i++) {
+		let location = markers[i];
 
-		var marker = new google.maps.Marker({
+		let marker = new google.maps.Marker({
 			position: { lat: location[1], lng: location[2] },
 			icon: {
 				path: google.maps.SymbolPath.CIRCLE,
@@ -118,7 +118,7 @@ function setMarkers(map) {
 	}
 }
 
-var content =
+let content =
 	'<div id="content">' +
 	'<h1 id="infoTitle">Fish</h1>' +
 	"<p>This fish lives in the sea</p>" +
