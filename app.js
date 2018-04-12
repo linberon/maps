@@ -58,7 +58,7 @@ function initMap() {
 	map.setMapTypeId("styled_map");
 
 	setMarkers(map);
-	setInfoWindow(map, marker);
+	//setInfoWindow(map, marker);
 }
 
 // Data for the markers consisting of a name, a LatLng and a zIndex for the
