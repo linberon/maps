@@ -118,6 +118,7 @@ function setMarkers(map) {
 	}
 }
 
+//put this in the markers function
 let content =
 	'<div id="content">' +
 	'<h1 id="infoTitle">Fish</h1>' +

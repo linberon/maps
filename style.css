@@ -33,6 +33,7 @@ body {
 	transition: 0.3s;
 	background-color: white;
 	opacity: 0.8;
+	z-index: 3;
 }
 
 #togglebtn {
