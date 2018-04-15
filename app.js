@@ -68,7 +68,7 @@ let markers = [
 	["Monkey", 41, 8, 5],
 	["Bird", 43, -76, 3],
 	["Bear", -3, 14, 2],
-	["Turtle", 47.566, 19.169, 1]
+	["Turtle", 47.567, 19.169, 1]
 ];
 
 // Adding markers to the map
