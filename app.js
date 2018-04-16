@@ -116,19 +116,20 @@ function setMarkers(map) {
 			});
 		});
 
-		let content =
-			'<div id="content">' +
-			'<h1 id="infoTitle">Fish</h1>' +
-			"<p>This fish lives in the sea</p>" +
-			"</div>";
-
 		function setInfoWindow(map, marker) {
-			markerContent = new google.maps.InfoWindow({
+			let content =
+				'<div id="content">' +
+				'<h1 id="infoTitle">Fish</h1>' +
+				"<p>This fish lives in the sea</p>" +
+				"</div>";
+
+			let infoWindow = new google.maps.InfoWindow({
 				content: '<img src="#"></img> ' + content + '<a href="#"></a>'
 			});
 
 			google.maps.event.addListener(marker, "click", function() {
-				marker.info.open(map, marker);
+				marker.infowindow.open(map, marker);
+				marker.infowindow.setContent(marker.content);
 			});
 		}
 	}
