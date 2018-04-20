@@ -1,8 +1,8 @@
 html,
 body {
-	height: 100%;
-	margin: 0;
-	padding: 0;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 /*#cover-page {
@@ -14,31 +14,35 @@ body {
 }*/
 
 #map {
-	height: 100%;
-	z-index: 1;
-	background-repeat: no-repeat;
+  height: 100%;
+  z-index: 1;
+  background-repeat: no-repeat;
 }
 
 #sidenav {
-	width: 20px;
-	height: 100%;
-	z-index: 2;
-	position: absolute;
-	transition: 0.3s;
+  width: 20px;
+  height: 100%;
+  z-index: 2;
+  position: absolute;
+  transition: 0.3s;
 }
 
 #sidenav:hover {
-	width: 200px;
-	cursor: pointer;
-	transition: 0.3s;
-	background-color: white;
-	opacity: 0.8;
-	z-index: 3;
+  width: 200px;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: white;
+  opacity: 0.8;
+  z-index: 3;
 }
 
 #togglebtn {
-	color: white;
-	font-size: 15px;
-	padding: 5px;
-	float: right;
+  color: white;
+  font-size: 15px;
+  padding: 5px;
+  float: right;
+}
+
+.thumbnail {
+  width: 150px;
 }
