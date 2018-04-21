@@ -5,7 +5,7 @@ let markers = [
 		lng: -78.178,
 		description: "this is the content for the Fish",
 		otherData: "Hi",
-		image: "/img/fish.jpg"
+		image: "imgs/fish.png"
 	},
 	{
 		name: "Monkey",
@@ -13,8 +13,7 @@ let markers = [
 		lng: 8,
 		description: "this is the content for the Monkey",
 		phrase: "Monkey says Hi",
-		image:
-			"https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Macaca_sinica_-_01.jpg/440px-Macaca_sinica_-_01.jpg"
+		image: "imgs/monkey.png"
 	},
 	{
 		name: "Bird",
@@ -22,7 +21,7 @@ let markers = [
 		lng: -76,
 		description: "this is the content for the Bird",
 		otherData: "Hi",
-		image: ""
+		image: "imgs/bird.png"
 	},
 	{
 		name: "Bear",
@@ -30,7 +29,7 @@ let markers = [
 		lng: 14,
 		description: "this is the content for the Bear",
 		otherData: "Hi",
-		image: ""
+		image: "imgs/bear.png"
 	},
 	{
 		name: "Turtle",
@@ -38,6 +37,6 @@ let markers = [
 		lng: 19.169,
 		description: "this is the content for the Turtle",
 		otherData: "Hi",
-		image: ""
+		image: "imgs/turtle.png"
 	}
 ];
