@@ -4,7 +4,6 @@ let markers = [
 		lat: -1.878,
 		lng: -78.178,
 		description: "this is the content for the Fish",
-		otherData: "Hi",
 		image: "imgs/fish.png"
 	},
 	{
@@ -20,7 +19,6 @@ let markers = [
 		lat: 43,
 		lng: -76,
 		description: "this is the content for the Bird",
-		otherData: "Hi",
 		image: "imgs/bird.png"
 	},
 	{
@@ -28,7 +26,6 @@ let markers = [
 		lat: -3,
 		lng: 14,
 		description: "this is the content for the Bear",
-		otherData: "Hi",
 		image: "imgs/bear.png"
 	},
 	{
@@ -36,7 +33,6 @@ let markers = [
 		lat: 47.567,
 		lng: 19.169,
 		description: "this is the content for the Turtle",
-		otherData: "Hi",
 		image: "imgs/turtle.png"
 	}
 ];
