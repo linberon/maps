@@ -24,7 +24,7 @@ let markers = [
 	{
 		name: "Bear",
 		lat: -3,
-		lng: 14,
+		lng: 14.5,
 		description: "this is the content for the Bear",
 		image: "imgs/bear.png"
 	},
