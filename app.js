@@ -6,7 +6,7 @@ function initMap() {
   // Create a new object, and passing it an array of styles
   let styledMapType = new google.maps.StyledMapType(
     [
-      { elementType: "geometry", stylers: [{ color: "#ebe3cd" }] },
+      { elementType: "geometry", stylers: [{ color: "#e8dec5" }] },
       { elementType: "labels", stylers: [{ visibility: "off" }] },
       {
         featureType: "administrative",
@@ -21,11 +21,6 @@ function initMap() {
         featureType: "administrative.neighborhood",
         stylers: [{ visibility: "off" }]
       },
-      {
-        featureType: "landscape.natural",
-        elementType: "geometry",
-        stylers: [{ color: "#248c8c" }]
-      },
       { featureType: "poi", stylers: [{ visibility: "off" }] },
 
       { featureType: "road", stylers: [{ visibility: "off" }] },
@@ -39,7 +34,7 @@ function initMap() {
       {
         featureType: "water",
         elementType: "geometry.fill",
-        stylers: [{ color: "#93cbce" }]
+        stylers: [{ color: "#c7cec0" }]
       }
     ],
     { name: "Styled Map" }
@@ -75,10 +70,10 @@ function setMarkers(map) {
       icon: {
         path: google.maps.SymbolPath.CIRCLE,
         scale: 15,
-        strokeColor: "#ffdb5b",
+        strokeColor: "#fc714e",
         strokeOpacity: 0,
         strokeWeight: 1,
-        fillColor: "#ffdb5b",
+        fillColor: "#fc714e",
         fillOpacity: 0
       },
       map: map,
@@ -92,10 +87,10 @@ function setMarkers(map) {
       marker.setIcon({
         path: google.maps.SymbolPath.CIRCLE,
         scale: 15,
-        strokeColor: "#ffdb5b",
+        strokeColor: "#fc714e",
         strokeOpacity: 0.8,
         strokeWeight: 1,
-        fillColor: "#ffdb5b",
+        fillColor: "#fc714e",
         fillOpacity: 0.8
       });
     });
@@ -104,10 +99,10 @@ function setMarkers(map) {
       marker.setIcon({
         path: google.maps.SymbolPath.CIRCLE,
         scale: 15,
-        strokeColor: "#ffdb5b",
+        strokeColor: "#fc714e",
         strokeOpacity: 0,
         strokeWeight: 1,
-        fillColor: "#ffdb5b",
+        fillColor: "#fc714e",
         fillOpacity: 0
       });
     });
@@ -121,10 +116,14 @@ function setMarkers(map) {
 
 function setInfoWindowContent(animal) {
   return `<div id="content">
-				<img class="thumbnail" src="${animal.image}"></img>
-				<h1 id="infoTitle">${animal.name}</h1>
-				<p>${animal.description}</p>
-				<a href="#">Link</a>
-				<p>${animal.phrase}</p>
-			</div>`;
+        <img class="thumbnail" src="${animal.image}"></img>
+        <h1 id="infoTitle">${animal.name}</h1>
+        <p>${animal.description}</p>
+        <a href="#">Link</a>
+        <p>${animal.phrase}</p>
+      </div>`;
+}
+
+function toggleSidenav() {
+  $("#sidenav").toggleClass("sidenav-open");
 }
