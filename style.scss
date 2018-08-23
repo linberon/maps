@@ -2,20 +2,32 @@ $land: #e8dec5;
 $water: #bdc4b6;
 $red: #fc714e;
 $background: #fcf4e0;
+$shadow: #b3ac99;
+$font: #333530;
 
 html,
 body {
   height: 100%;
   margin: 0;
   padding: 0;
+  font-family: 'Averia Sans Libre', cursive;
+}
+
+.hidden{
+  display: none;
 }
 
 #cover-page {
-  height: 100%;
-  background-color: black;
+  /* background: url();
   background-size: cover;
+  background-color: black;
   background-repeat: no-repeat;
   position: fixed;
+  z-index: 4;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;*/
 }
 
 #map {
@@ -43,9 +55,61 @@ body {
 .sidenav-open {
   width: 200px;
   background-color: $background;
-  box-shadow: 0px 2px 8px #b3ac99;
+  box-shadow: 0px 2px 8px $shadow;
   opacity: 0.8;
   z-index: 3;
+
+  .menu{
+    text-align: center;
+    padding-top: 18vh;
+    color: #b3ac99;
+  }
+
+  ul{
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  li{
+    padding-bottom: 20px;
+  }
+
+  a{
+    text-decoration: none;
+    outline: none;
+    font-size: 20px;
+    color: $font;
+  }
+
+  a:hover {
+    color: $red !important;
+    transition: 0.5s;
+  }
+
+  #donate-btn{
+    text-align: center;
+    background-color: $red;
+    font-weight: bold;
+    font-size: 22px;
+    padding: 6vh;
+    border: none;
+    outline: none;
+  }
+  
+  #donate-btn > a{
+    color: white !important;
+  }
+
+  #donate-btn:hover {
+    padding: 6.5vh;
+    transition: ease-in-out 0.3s;
+  }
+}
+
+//MODALS
+
+.modal-backdrop {
+   background-color: $font;
 }
 
 .thumbnail {

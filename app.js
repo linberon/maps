@@ -126,4 +126,5 @@ function setInfoWindowContent(animal) {
 
 function toggleSidenav() {
   $("#sidenav").toggleClass("sidenav-open");
+  $(".menu").toggleClass("hidden");
 }
