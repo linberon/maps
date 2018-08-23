@@ -134,7 +134,7 @@ body {
 }
 
 .modal-content{
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: $font; 
   padding: 10px;
   border-radius: 0;
@@ -144,19 +144,20 @@ body {
 //Google popup
 
 #content{
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: $font;
   border-radius: 0;
 }
 
 #infoTitle{
+  font-family: 'Averia Sans Libre', cursive;
   font-size: 20px;
   padding-top: 10px;
   font-weight: bold;
 }
 
 #animalInfo{
-
+  font-size: 14px;
 }
 
 .thumbnail {

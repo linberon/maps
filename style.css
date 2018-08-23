@@ -96,21 +96,25 @@ body {
   background-color: #333530; }
 
 .modal-content {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #333530;
   padding: 10px;
   border-radius: 0;
   border: none; }
 
 #content {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #333530;
   border-radius: 0; }
 
 #infoTitle {
+  font-family: 'Averia Sans Libre', cursive;
   font-size: 20px;
   padding-top: 10px;
   font-weight: bold; }
+
+#animalInfo {
+  font-size: 14px; }
 
 .thumbnail {
   width: 300px; }
