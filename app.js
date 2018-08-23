@@ -34,7 +34,7 @@ function initMap() {
       {
         featureType: "water",
         elementType: "geometry.fill",
-        stylers: [{ color: "#c7cec0" }]
+        stylers: [{ color: "#bdc4b6" }]
       }
     ],
     { name: "Styled Map" }
