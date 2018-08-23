@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Maps test</title>
+	<title>Disappearing Ones</title>
 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
@@ -15,15 +15,16 @@
 </head>
 <body>
 
-
-	<div id="cover-page"></div>
+	<div id="cover-page">
+		<button id="play-btn" class="link" onclick="hideCoverPage()"><a href="#map">Play</a></button>
+	</div>
 
 	<div id="sidenav">
 		<span id="togglebtn" onclick="toggleSidenav()">&#9776;</span>
 
-		<div class="hidden menu">
+		<div class="menu">
 			<ul>
-				<li><a class="link" href="#cover-page">Home</a></li>
+				<li><a class="link" href="#cover-page" onclick="showCoverPage()">Home</a></li>
 				<li><a class="link" data-toggle="modal" href="#intro-modal">Intro</a></li>
 				<li><a class="link" data-toggle="modal" href="#links-modal">Links</a></li>
 				<li><a class="link" data-toggle="modal" href="#contact-modal">Contact</a></li>
@@ -35,7 +36,7 @@
 
 	</div>
 
-	<div class="modal fade bd-example-modal-lg" id="links-modal" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal fade" id="intro-modal" tabindex="-1" role="dialog" aria-hidden="true">
 	  <div class="modal-dialog modal-lg">
 	    <div class="modal-content">
 	      Lorem ipsum dolor sit amet orang
@@ -43,7 +44,7 @@
 	  </div>
 	</div>
 
-	<div class="modal fade bd-example-modal-lg" id="contact-modal" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal fade" id="links-modal" tabindex="-1" role="dialog" aria-hidden="true">
 	  <div class="modal-dialog modal-lg">
 	    <div class="modal-content">
 	      Lorem ipsum dolor sit amet baboon
@@ -51,7 +52,7 @@
 	  </div>
 	</div>
 
-	<div class="modal fade bd-example-modal-lg" id="intro-modal" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal fade" id="contact-modal" tabindex="-1" role="dialog" aria-hidden="true">
 	  <div class="modal-dialog modal-lg">
 	    <div class="modal-content">
 	      Lorem ipsum dolor sit amet gorilla

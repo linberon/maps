@@ -18,16 +18,36 @@ body {
 }
 
 #cover-page {
-  /* background: url();
+  background: url();
   background-size: cover;
-  background-color: black;
+  background-color: #375454;
   background-repeat: no-repeat;
   position: fixed;
   z-index: 4;
   bottom: 0;
   right: 0;
   left: 0;
-  top: 0;*/
+  top: 0;
+
+  #play-btn{
+    width: 100%;
+    transform: translateY(92vh);
+    height: 8vh;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    background-color: transparent;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  }
+  #play-btn > a {
+    color: white;
+    text-decoration: none;
+  }
+  #play-btn > a:hover {
+    text-decoration: none;
+    opacity: 0;
+    transition: 3s; 
+  }
 }
 
 #map {
@@ -81,9 +101,9 @@ body {
     color: $font;
   }
 
-  a:hover {
-    color: $red !important;
-    transition: 0.5s;
+  li > a:hover {
+    opacity: 0;
+    transition: 3s;
   }
 
   #donate-btn{
@@ -97,21 +117,48 @@ body {
   }
   
   #donate-btn > a{
-    color: white !important;
+    color: white;
   }
 
   #donate-btn:hover {
     padding: 6.5vh;
     transition: ease-in-out 0.3s;
+    opacity: 1;
   }
 }
 
-//MODALS
+//Bootstrap modals
 
 .modal-backdrop {
    background-color: $font;
 }
 
+.modal-content{
+  font-family: 'Open Sans', sans-serif;
+  color: $font; 
+  padding: 10px;
+  border-radius: 0;
+  border: none;
+}
+
+//Google popup
+
+#content{
+  font-family: 'Open Sans', sans-serif;
+  color: $font;
+  border-radius: 0;
+}
+
+#infoTitle{
+  font-size: 20px;
+  padding-top: 10px;
+  font-weight: bold;
+}
+
+#animalInfo{
+
+}
+
 .thumbnail {
-  width: 200px;
+  width: 300px;
 }

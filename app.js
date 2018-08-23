@@ -83,19 +83,19 @@ function setMarkers(map) {
       content: setInfoWindowContent(animal)
     });
 
-    google.maps.event.addListener(marker, "mouseover", function() {
+    /*google.maps.event.addListener(marker, "mouseover", function() {
       marker.setIcon({
         path: google.maps.SymbolPath.CIRCLE,
         scale: 15,
         strokeColor: "#fc714e",
-        strokeOpacity: 0.8,
+        strokeOpacity: 0.2,
         strokeWeight: 1,
         fillColor: "#fc714e",
-        fillOpacity: 0.8
+        fillOpacity: 0
       });
-    });
+    });*/
 
-    google.maps.event.addListener(marker, "mouseout", function() {
+    /*google.maps.event.addListener(marker, "mouseout", function() {
       marker.setIcon({
         path: google.maps.SymbolPath.CIRCLE,
         scale: 15,
@@ -105,11 +105,20 @@ function setMarkers(map) {
         fillColor: "#fc714e",
         fillOpacity: 0
       });
-    });
+    });*/
 
     google.maps.event.addListener(marker, "click", function() {
       marker.infoWindow.open(map, marker);
       marker.infoWindow.setContent(marker.content);
+      marker.setIcon({
+        path: google.maps.SymbolPath.CIRCLE,
+        scale: 20,
+        strokeColor: "#fc714e",
+        strokeOpacity: 0,
+        strokeWeight: 1,
+        fillColor: "#fc714e",
+        fillOpacity: 0.8
+      });
     });
   }
 }
@@ -118,7 +127,7 @@ function setInfoWindowContent(animal) {
   return `<div id="content">
         <img class="thumbnail" src="${animal.image}"></img>
         <h1 id="infoTitle">${animal.name}</h1>
-        <p>${animal.description}</p>
+        <p id="animalInfo">${animal.description}</p>
         <a href="#">Link</a>
         <p>${animal.phrase}</p>
       </div>`;
@@ -127,4 +136,13 @@ function setInfoWindowContent(animal) {
 function toggleSidenav() {
   $("#sidenav").toggleClass("sidenav-open");
   $(".menu").toggleClass("hidden");
+}
+
+function hideCoverPage() {
+  $("#cover-page").hide();
+  $("#sidenav").addClass("sidenav-open");
+}
+
+function showCoverPage() {
+  $("#cover-page").show();
 }

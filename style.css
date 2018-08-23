@@ -9,16 +9,32 @@ body {
   display: none; }
 
 #cover-page {
-  /* background: url();
+  background: url();
   background-size: cover;
-  background-color: black;
+  background-color: #375454;
   background-repeat: no-repeat;
   position: fixed;
   z-index: 4;
   bottom: 0;
   right: 0;
   left: 0;
-  top: 0;*/ }
+  top: 0; }
+  #cover-page #play-btn {
+    width: 100%;
+    transform: translateY(92vh);
+    height: 8vh;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    background-color: transparent;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); }
+  #cover-page #play-btn > a {
+    color: white;
+    text-decoration: none; }
+  #cover-page #play-btn > a:hover {
+    text-decoration: none;
+    opacity: 0;
+    transition: 3s; }
 
 #map {
   height: 100%;
@@ -58,9 +74,9 @@ body {
     outline: none;
     font-size: 20px;
     color: #333530; }
-  .sidenav-open a:hover {
-    color: #fc714e !important;
-    transition: 0.5s; }
+  .sidenav-open li > a:hover {
+    opacity: 0;
+    transition: 3s; }
   .sidenav-open #donate-btn {
     text-align: center;
     background-color: #fc714e;
@@ -70,15 +86,33 @@ body {
     border: none;
     outline: none; }
   .sidenav-open #donate-btn > a {
-    color: white !important; }
+    color: white; }
   .sidenav-open #donate-btn:hover {
     padding: 6.5vh;
-    transition: ease-in-out 0.3s; }
+    transition: ease-in-out 0.3s;
+    opacity: 1; }
 
 .modal-backdrop {
   background-color: #333530; }
 
+.modal-content {
+  font-family: 'Open Sans', sans-serif;
+  color: #333530;
+  padding: 10px;
+  border-radius: 0;
+  border: none; }
+
+#content {
+  font-family: 'Open Sans', sans-serif;
+  color: #333530;
+  border-radius: 0; }
+
+#infoTitle {
+  font-size: 20px;
+  padding-top: 10px;
+  font-weight: bold; }
+
 .thumbnail {
-  width: 200px; }
+  width: 300px; }
 
 /*# sourceMappingURL=style.css.map */
