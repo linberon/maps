@@ -6,7 +6,7 @@ function initMap() {
   // Create a new object, and passing it an array of styles
   let styledMapType = new google.maps.StyledMapType(
     [
-      { elementType: "geometry", stylers: [{ color: "#e8dec5" }] },
+      { elementType: "geometry", stylers: [{ color: "#78b3a0" }] },
       { elementType: "labels", stylers: [{ visibility: "off" }] },
       {
         featureType: "administrative",
@@ -34,7 +34,7 @@ function initMap() {
       {
         featureType: "water",
         elementType: "geometry.fill",
-        stylers: [{ color: "#bdc4b6" }]
+        stylers: [{ color: "#2d7f82" }]
       }
     ],
     { name: "Styled Map" }
@@ -70,10 +70,10 @@ function setMarkers(map) {
       icon: {
         path: google.maps.SymbolPath.CIRCLE,
         scale: 15,
-        strokeColor: "#fc714e",
+        strokeColor: "#f02139",
         strokeOpacity: 0,
         strokeWeight: 1,
-        fillColor: "#fc714e",
+        fillColor: "#f02139",
         fillOpacity: 0
       },
       map: map,
@@ -83,40 +83,16 @@ function setMarkers(map) {
       content: setInfoWindowContent(animal)
     });
 
-    /*google.maps.event.addListener(marker, "mouseover", function() {
-      marker.setIcon({
-        path: google.maps.SymbolPath.CIRCLE,
-        scale: 15,
-        strokeColor: "#fc714e",
-        strokeOpacity: 0.2,
-        strokeWeight: 1,
-        fillColor: "#fc714e",
-        fillOpacity: 0
-      });
-    });*/
-
-    /*google.maps.event.addListener(marker, "mouseout", function() {
-      marker.setIcon({
-        path: google.maps.SymbolPath.CIRCLE,
-        scale: 15,
-        strokeColor: "#fc714e",
-        strokeOpacity: 0,
-        strokeWeight: 1,
-        fillColor: "#fc714e",
-        fillOpacity: 0
-      });
-    });*/
-
     google.maps.event.addListener(marker, "click", function() {
       marker.infoWindow.open(map, marker);
       marker.infoWindow.setContent(marker.content);
       marker.setIcon({
         path: google.maps.SymbolPath.CIRCLE,
         scale: 20,
-        strokeColor: "#fc714e",
+        strokeColor: "#f02139",
         strokeOpacity: 0,
         strokeWeight: 1,
-        fillColor: "#fc714e",
+        fillColor: "#f02139",
         fillOpacity: 0.8
       });
     });

@@ -11,11 +11,12 @@
 
 	<link rel="stylesheet" type="text/css" href="style.css">
  	<link href="https://fonts.googleapis.com/css?family=Averia+Sans+Libre:700|Montserrat" rel="stylesheet"> 
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <body>
 
-	<div id="cover-page">
+	<div id="cover-page" onclick="hideCoverPage()">
 		<button id="play-btn" class="link" onclick="hideCoverPage()"><a href="#map">PLAY</a></button>
 	</div>
 
@@ -39,7 +40,13 @@
 	<div class="modal fade" id="intro-modal" tabindex="-1" role="dialog" aria-hidden="true">
 	  <div class="modal-dialog modal-lg">
 	    <div class="modal-content">
-	      Lorem ipsum dolor sit amet orang
+
+	    	<h1>About the project</h1>
+
+			<p>Search for the world's rarest animals, and put them back on the map!</p>
+			<p>Learn about their habits and the threats they have to face</p>
+			<p>Support conservation efforts to help saving these wonderful species</p>
+
 	    </div>
 	  </div>
 	</div>
@@ -47,7 +54,12 @@
 	<div class="modal fade" id="links-modal" tabindex="-1" role="dialog" aria-hidden="true">
 	  <div class="modal-dialog modal-lg">
 	    <div class="modal-content">
-	      Lorem ipsum dolor sit amet baboon
+	    	<ul>
+	    		<h1>Sources and useful links</h1>
+
+	    		<li><a href="http://www.iucnredlist.org/" target="_blank">The IUCN Red List of Threatened Species</a></li>
+	    		<li><a href="https://www.durrell.org/wildlife/" target="_blank">Durrell Wildlife Conservation Trust</a></li>
+	    	</ul>   		
 	    </div>
 	  </div>
 	</div>
@@ -55,7 +67,18 @@
 	<div class="modal fade" id="contact-modal" tabindex="-1" role="dialog" aria-hidden="true">
 	  <div class="modal-dialog modal-lg">
 	    <div class="modal-content">
-	      Lorem ipsum dolor sit amet gorilla
+
+	    	<h1>Where to find me</h1>
+
+	    	<p>Check out my other projects at <a href="https://www.katalinberon.com/" target="_blank">www.katalinberon.com</a></p>
+
+	    	<p>I'm looking forward to connect, collaborate, or just have a chat!</p>
+
+	    	<div class="social-icons">
+				<a href="https://linkedin.com/in/katalin-beron-284811160" class="fa fa-linkedin" target="_blank"></a>
+				<a href="https://github.com/linberon" class="fa fa-github" target="_blank"></a>
+			</div>
+
 	    </div>
 	  </div>
 	</div>
