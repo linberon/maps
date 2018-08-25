@@ -137,10 +137,43 @@ body {
 
 .modal-content{
   font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
   color: $grey; 
-  padding: 10px;
+  padding: 3vh;
   border-radius: 0;
   border: none;
+
+  ul{
+    list-style-type: none;
+  }
+
+  li::before {
+    content: "\2022";
+    color: $red;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em}
+
+  a{
+    color: $grey;
+    text-decoration: none;
+  }
+  a:hover{
+    color: $red;
+    transition: 1s;
+  }
+  .fa-linkedin, .fa-github, .fa-behance{
+    color: $red;
+    padding-right: 10px;
+    font-size: 24px; 
+  }
+}
+
+.modal-header{
+  font-family: 'Averia Sans Libre', cursive;
+  font-size: 24px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 //Google popup
@@ -153,13 +186,18 @@ body {
 
 #infoTitle{
   font-family: 'Averia Sans Libre', cursive;
-  font-size: 20px;
+  font-size: 24px;
   padding-top: 10px;
+}
+
+#animalInfo, .info-text{
+  font-size: 14px;
   font-weight: bold;
 }
 
-#animalInfo{
-  font-size: 14px;
+.red-text{
+  color: $red;
+  font-weight: bold;
 }
 
 .thumbnail {

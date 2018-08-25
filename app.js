@@ -103,9 +103,9 @@ function setInfoWindowContent(animal) {
   return `<div id="content">
         <img class="thumbnail" src="${animal.image}"></img>
         <h1 id="infoTitle">${animal.name}</h1>
+        <h6 id="status" class="red-text">${animal.status}</h6>
         <p id="animalInfo">${animal.description}</p>
-        <a href="#">Link</a>
-        <p>${animal.phrase}</p>
+        <h6 class="red-text">Threats</h6><p class="info-text">${animal.threats}</p>
       </div>`;
 }
 

@@ -95,10 +95,35 @@ body {
 
 .modal-content {
   font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
   color: #282828;
-  padding: 10px;
+  padding: 3vh;
   border-radius: 0;
   border: none; }
+  .modal-content ul {
+    list-style-type: none; }
+  .modal-content li::before {
+    content: "\2022";
+    color: #f02139;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em; }
+  .modal-content a {
+    color: #282828;
+    text-decoration: none; }
+  .modal-content a:hover {
+    color: #f02139;
+    transition: 1s; }
+  .modal-content .fa-linkedin, .modal-content .fa-github, .modal-content .fa-behance {
+    color: #f02139;
+    padding-right: 10px;
+    font-size: 24px; }
+
+.modal-header {
+  font-family: 'Averia Sans Libre', cursive;
+  font-size: 24px;
+  padding-left: 0;
+  padding-right: 0; }
 
 #content {
   font-family: 'Montserrat', sans-serif;
@@ -107,12 +132,16 @@ body {
 
 #infoTitle {
   font-family: 'Averia Sans Libre', cursive;
-  font-size: 20px;
-  padding-top: 10px;
+  font-size: 24px;
+  padding-top: 10px; }
+
+#animalInfo, .info-text {
+  font-size: 14px;
   font-weight: bold; }
 
-#animalInfo {
-  font-size: 14px; }
+.red-text {
+  color: #f02139;
+  font-weight: bold; }
 
 .thumbnail {
   width: 300px; }
