@@ -92,6 +92,12 @@ body {
     padding: 6.5vh;
     transition: ease-in-out 0.3s;
     opacity: 1; }
+  .sidenav-open #copyright {
+    font-size: 14px;
+    transform: translateX(30px);
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 3vh; }
 
 .modal-content {
   font-family: 'Montserrat', sans-serif;
@@ -101,7 +107,8 @@ body {
   border-radius: 0;
   border: none; }
   .modal-content ul {
-    list-style-type: none; }
+    list-style-type: none;
+    margin-bottom: 0; }
   .modal-content li::before {
     content: "\2022";
     color: #f02139;
@@ -123,7 +130,8 @@ body {
   font-family: 'Averia Sans Libre', cursive;
   font-size: 24px;
   padding-left: 0;
-  padding-right: 0; }
+  padding-right: 0;
+  padding-top: 0; }
 
 #content {
   font-family: 'Montserrat', sans-serif;

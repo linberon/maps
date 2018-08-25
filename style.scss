@@ -131,6 +131,14 @@ body {
     transition: ease-in-out 0.3s;
     opacity: 1;
   }
+
+  #copyright{
+    font-size: 14px;
+    transform: translateX(30px);
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 3vh;
+  }
 }
 
 //Bootstrap modals
@@ -145,6 +153,7 @@ body {
 
   ul{
     list-style-type: none;
+    margin-bottom: 0;
   }
 
   li::before {
@@ -174,6 +183,7 @@ body {
   font-size: 24px;
   padding-left: 0;
   padding-right: 0;
+  padding-top: 0;
 }
 
 //Google popup
