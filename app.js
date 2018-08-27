@@ -49,9 +49,9 @@ function initMap() {
     maxZoom: 4,
     disableDefaultUI: true
   });
-  infoWindow = new google.maps.InfoWindow({
+  /*infoWindow = new google.maps.InfoWindow({
     maxWidth: 330
-  });
+  });*/
 
   //Associate the styled map with the MapTypeId and set it to display.
   map.mapTypes.set("styled_map", styledMapType);
@@ -79,13 +79,15 @@ function setMarkers(map) {
       map: map,
       draggable: false,
       clickable: true,
-      infoWindow: infoWindow,
+     // infoWindow: infoWindow,
       content: setInfoWindowContent(animal)
     });
 
     google.maps.event.addListener(marker, "click", function() {
-      marker.infoWindow.open(map, marker);
-      marker.infoWindow.setContent(marker.content);
+      $("#animal-modal").modal("show");
+      $(".modal-content").html(this.content);
+      //marker.infoWindow.open(map, marker);
+      //marker.infoWindow.setContent(marker.content);
       marker.setIcon({
         path: google.maps.SymbolPath.CIRCLE,
         scale: 15,
