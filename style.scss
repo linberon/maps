@@ -87,7 +87,7 @@ body {
 
   .menu{
     text-align: center;
-    padding-top: 18vh;
+    padding-top: 15vh;
     color: $red;
   }
 
@@ -112,12 +112,17 @@ body {
     transition: 3s;
   }
 
+  #donate-text{
+    margin-bottom: 0;
+    padding: 10px;
+  }
+
   #donate-btn{
     text-align: center;
     background-color: $red;
     font-weight: bold;
     font-size: 22px;
-    padding: 6vh;
+    padding: 4vh 6vh;
     border: none;
     outline: none;
   }
@@ -127,7 +132,7 @@ body {
   }
 
   #donate-btn:hover {
-    padding: 6.5vh;
+    padding: 4.5vh 6.5vh;
     transition: ease-in-out 0.3s;
     opacity: 1;
   }
@@ -187,6 +192,10 @@ body {
 }
 
 //Google popup
+
+.infoWindow{
+  height: 200px !important;
+}
 
 #content{
   font-family: 'Montserrat', sans-serif;

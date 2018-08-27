@@ -1,47 +1,47 @@
 let markers = [
 	{
-		name: "Fish",
-		lat: -1.878,
-		lng: -78.178,
-		status: "Status here",
+		name: "Andean bear",
+		lat: -18.67,
+		lng: -66.54,
+		status: "Vulnerable",
+		description: "The Andean bear is the only South American bear species. The other common name is Spectacled bear, thanks to their distinctive markings on the face, neck and chest. These elusive bears are native to the Andes mountain region, living in a wide variety of habitats, ranging from cloud forests to shrublands. They are omnivorous, although they mainly feed on fruits and different plants. Andean bears are known as the best climbers of all the bear species.",
+		threats: "Habitat loss, illegal killing, and climate change. Bear parts are sold to be used in traditional oriental medicine.",
+		image: "imgs/Andean_bear_sm.jpg"
+	},
+	{
+		name: "Hawaiian crow",
+		lat: 19.57,
+		lng: -155.61,
+		//status: "",
 		description: "Be patient, I'm still working on it",
-
+		//threats: "",
 		image: "imgs/no_img.jpg"
 	},
 	{
-		name: "Monkey",
-		lat: 41,
-		lng: 8,
-		status: "Status here",
+		name: "Blue poison dart frog",
+		lat: -4.77,
+		lng: -61.66,
+		//status: "",
 		description: "Be patient, I'm still working on it",
-		threats: "What's threatening this species",
+		//threats: "",
 		image: "imgs/no_img.jpg"
 	},
 	{
-		name: "Bird",
-		lat: 43,
-		lng: -76,
-		status: "Status here",
+		name: "Alagoas curassow",
+		lat: -9.68,
+		lng: -36.26,
+		//status: "",
 		description: "Be patient, I'm still working on it",
-		threats: "What's threatening this species",
+		//threats: "",
 		image: "imgs/no_img.jpg"
 	},
 	{
-		name: "Bear",
-		lat: -3,
-		lng: 14.5,
-		status: "Status here",
+		name: "Red wolf",
+		lat: 35.67,
+		lng: -76.48,
+		//status: "",
 		description: "Be patient, I'm still working on it",
-		threats: "What's threatening this species",
-		image: "imgs/no_img.jpg"
-	},
-	{
-		name: "Turtle",
-		lat: 47.567,
-		lng: 19.169,
-		status: "Status here",
-		description: "Be patient, I'm still working on it",
-		threats: "What's threatening this species",
+		//threats: "",
 		image: "imgs/no_img.jpg"
 	}
 ];

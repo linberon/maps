@@ -50,7 +50,7 @@ function initMap() {
     disableDefaultUI: true
   });
   infoWindow = new google.maps.InfoWindow({
-    content: "HI!"
+    maxWidth: 330
   });
 
   //Associate the styled map with the MapTypeId and set it to display.
@@ -70,11 +70,11 @@ function setMarkers(map) {
       icon: {
         path: google.maps.SymbolPath.CIRCLE,
         scale: 15,
-        strokeColor: "#f02139",
+        strokeColor: "#ffffff",
         strokeOpacity: 0,
-        strokeWeight: 1,
-        fillColor: "#f02139",
-        fillOpacity: 0
+        strokeWeight: 0,
+        fillColor: "#ffffff",
+        fillOpacity: 0.1
       },
       map: map,
       draggable: false,
@@ -88,12 +88,12 @@ function setMarkers(map) {
       marker.infoWindow.setContent(marker.content);
       marker.setIcon({
         path: google.maps.SymbolPath.CIRCLE,
-        scale: 20,
+        scale: 15,
         strokeColor: "#f02139",
         strokeOpacity: 0,
-        strokeWeight: 1,
+        strokeWeight: 0,
         fillColor: "#f02139",
-        fillOpacity: 0.8
+        fillOpacity: 0.6
       });
     });
   }
@@ -103,7 +103,7 @@ function setInfoWindowContent(animal) {
   return `<div id="content">
         <img class="thumbnail" src="${animal.image}"></img>
         <h1 id="infoTitle">${animal.name}</h1>
-        <h6 id="status" class="red-text">${animal.status}</h6>
+        <h6 id="status" class="red-text">Status: ${animal.status}</h6>
         <p id="animalInfo">${animal.description}</p>
         <h6 class="red-text">Threats</h6><p class="info-text">${animal.threats}</p>
       </div>`;
@@ -116,6 +116,7 @@ function toggleSidenav() {
 
 function hideCoverPage() {
   $("#cover-page").hide();
+  $("#intro-modal").modal("show");
   $("#sidenav").addClass("sidenav-open");
 }
 
