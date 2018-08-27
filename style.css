@@ -101,7 +101,8 @@ body {
     transform: translateX(30px);
     position: fixed;
     bottom: 0;
-    margin-bottom: 3vh; }
+    margin-bottom: 3vh;
+    margin-top: 3vh; }
 
 .modal-content {
   font-family: 'Montserrat', sans-serif;
@@ -112,7 +113,8 @@ body {
   border: none; }
   .modal-content ul {
     list-style-type: none;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    margin-top: 10px; }
   .modal-content li::before {
     content: "\2022";
     color: #f02139;
@@ -167,5 +169,9 @@ body {
 .thumbnail {
   max-width: 70vw;
   width: 300px; }
+  @media (min-width: 480px) {
+    .thumbnail {
+      float: left;
+      padding-right: 3vh; } }
 
 /*# sourceMappingURL=style.css.map */

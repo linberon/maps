@@ -144,6 +144,7 @@ body {
     position: fixed;
     bottom: 0;
     margin-bottom: 3vh;
+    margin-top: 3vh;
   }
 }
 
@@ -160,6 +161,7 @@ body {
   ul{
     list-style-type: none;
     margin-bottom: 0;
+    margin-top: 10px;
   }
 
   li::before {
@@ -232,4 +234,9 @@ body {
 .thumbnail {
   max-width: 70vw;
   width: 300px;
+
+  @media(min-width: 480px){
+    float: left;
+    padding-right: 3vh;
+  }
 }
