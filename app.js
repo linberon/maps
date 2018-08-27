@@ -49,9 +49,6 @@ function initMap() {
     maxZoom: 4,
     disableDefaultUI: true
   });
-  /*infoWindow = new google.maps.InfoWindow({
-    maxWidth: 330
-  });*/
 
   //Associate the styled map with the MapTypeId and set it to display.
   map.mapTypes.set("styled_map", styledMapType);
@@ -79,15 +76,12 @@ function setMarkers(map) {
       map: map,
       draggable: false,
       clickable: true,
-     // infoWindow: infoWindow,
       content: setInfoWindowContent(animal)
     });
 
     google.maps.event.addListener(marker, "click", function() {
       $("#animal-modal").modal("show");
-      $(".modal-content").html(this.content);
-      //marker.infoWindow.open(map, marker);
-      //marker.infoWindow.setContent(marker.content);
+      $(".animal-modal-content").html(this.content);
       marker.setIcon({
         path: google.maps.SymbolPath.CIRCLE,
         scale: 15,
@@ -103,6 +97,7 @@ function setMarkers(map) {
 
 function setInfoWindowContent(animal) {
   return `<div id="content">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
         <img class="thumbnail" src="${animal.image}"></img>
         <h1 id="infoTitle">${animal.name}</h1>
         <h6 id="status" class="red-text">Status: ${animal.status}</h6>
@@ -124,8 +119,4 @@ function hideCoverPage() {
 
 function showCoverPage() {
   $("#cover-page").show();
-}
-
-function closeModal(){
-  $(".modal").modal("hide");
 }

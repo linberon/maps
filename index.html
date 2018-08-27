@@ -42,22 +42,18 @@
 
 	<div class="modal fade" id="animal-modal" tabindex="-1" role="dialog" aria-hidden="true">
 	  <div class="modal-dialog modal-lg">
-	    <div class="modal-content">
-
-	    	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-
-
-	    </div>
+	    <div class="modal-content animal-modal-content"></div>
 	  </div>
 	</div>
-
-
 
 	<div class="modal fade" id="intro-modal" tabindex="-1" role="dialog" aria-hidden="true">
 	  <div class="modal-dialog modal-lg">
 	    <div class="modal-content">
 
-	    	<h1 class="modal-header red-text" onclick="closeModal()">About the project</h1>
+	    	<div class="modal-header red-text">
+	    		<h1>About the project</h1>
+	    		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+	    	</div>
 
 				<p>Disappearing Ones was created with the aim to raise awareness about threatened species.</p>
 				<p>Search for the world's rarest animals, and put them back on the map! Tap or click to discover hidden locations.</p>
@@ -71,8 +67,12 @@
 	<div class="modal fade" id="links-modal" tabindex="-1" role="dialog" aria-hidden="true">
 	  <div class="modal-dialog modal-lg">
 	    <div class="modal-content">
-	    	
-	    		<h1 class="modal-header red-text" onclick="closeModal()">Sources and useful links</h1>
+
+	    	<div class="modal-header red-text">
+	    		<h1>Sources and useful links</h1>
+	    		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+	    	</div>
+
 			<ul>
 	    		<li><a href="http://www.iucnredlist.org/" target="_blank">The IUCN Red List of Threatened Species</a></li>
 	    		<li><a href="https://www.durrell.org/wildlife/" target="_blank">Durrell Wildlife Conservation Trust</a></li>
@@ -88,7 +88,10 @@
 	  <div class="modal-dialog modal-lg">
 	    <div class="modal-content">
 
-	    	<h1 class="modal-header red-text" onclick="closeModal()">Where to find me</h1>
+	    	<div class="modal-header red-text">
+	    		<h1>Where to find me</h1>
+	    		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+	    	</div>
 
 	    	<p>Check out my other projects at <a href="https://www.katalinberon.com/" target="_blank">www.katalinberon.com</a></p>
 
