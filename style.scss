@@ -88,7 +88,7 @@ body {
 
   .menu{
     text-align: center;
-    padding-top: 15vh;
+    padding-top: 10vh;
     color: $red;
   }
 
@@ -185,6 +185,7 @@ body {
 }
 
 .modal-header{
+  cursor: pointer;
   font-family: 'Averia Sans Libre', cursive;
   font-size: 24px;
   padding-left: 0;

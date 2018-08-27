@@ -123,3 +123,7 @@ function hideCoverPage() {
 function showCoverPage() {
   $("#cover-page").show();
 }
+
+function closeModal(){
+  $(".modal").modal("hide");
+}

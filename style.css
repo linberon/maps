@@ -64,7 +64,7 @@ body {
   z-index: 3; }
   .sidenav-open .menu {
     text-align: center;
-    padding-top: 15vh;
+    padding-top: 10vh;
     color: #f02139; }
   .sidenav-open ul {
     list-style-type: none;
@@ -131,6 +131,7 @@ body {
     font-size: 24px; }
 
 .modal-header {
+  cursor: pointer;
   font-family: 'Averia Sans Libre', cursive;
   font-size: 24px;
   padding-left: 0;
