@@ -22,6 +22,7 @@ body {
     #cover-page {
       background-image: url(imgs/maps_cover.jpg); } }
   #cover-page #play-btn {
+    cursor: pointer;
     width: 100%;
     transform: translateY(92vh);
     height: 8vh;
@@ -32,7 +33,7 @@ body {
   #cover-page #play-btn > a {
     color: white;
     text-decoration: none; }
-  #cover-page #play-btn > a:hover {
+  #cover-page #play-btn:hover {
     text-decoration: none;
     opacity: 0;
     transition: 3s; }
