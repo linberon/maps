@@ -114,7 +114,7 @@ body {
   }
 
   #donate-text{
-    margin-bottom: 0;
+    margin-bottom: 4vh;
     padding: 10px;
   }
 
@@ -127,9 +127,6 @@ body {
     padding: 4vh 6vh;
     border: none;
     outline: none;
-  }
-  
-  #donate-btn > a{
     color: white;
   }
 
@@ -145,7 +142,7 @@ body {
     position: fixed;
     bottom: 0;
     margin-bottom: 3vh;
-    margin-top: 3vh;
+    padding-top: 3vh;
   }
 }
 

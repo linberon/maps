@@ -80,7 +80,7 @@ body {
     opacity: 0;
     transition: 3s; }
   .sidenav-open #donate-text {
-    margin-bottom: 0;
+    margin-bottom: 4vh;
     padding: 10px; }
   .sidenav-open #donate-btn {
     cursor: pointer;
@@ -90,8 +90,7 @@ body {
     font-size: 22px;
     padding: 4vh 6vh;
     border: none;
-    outline: none; }
-  .sidenav-open #donate-btn > a {
+    outline: none;
     color: white; }
   .sidenav-open #donate-btn:hover {
     padding: 4.5vh 6.5vh;
@@ -103,7 +102,7 @@ body {
     position: fixed;
     bottom: 0;
     margin-bottom: 3vh;
-    margin-top: 3vh; }
+    padding-top: 3vh; }
 
 .modal-content {
   font-family: 'Montserrat', sans-serif;
