@@ -83,6 +83,7 @@ body {
     margin-bottom: 0;
     padding: 10px; }
   .sidenav-open #donate-btn {
+    cursor: pointer;
     text-align: center;
     background-color: #f02139;
     font-weight: bold;
