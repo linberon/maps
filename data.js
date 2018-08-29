@@ -39,9 +39,9 @@ let markers = [
 		name: "Red wolf",
 		lat: 35.67,
 		lng: -76.48,
-		//status: "",
+		//status: "Critically endangered",
 		description: "Be patient, I'm still working on it",
-		//threats: "",
+		//threats: "Hybridization with coyotes, human induced deaths.",
 		image: "imgs/no_img.jpg"
 	}
 ];
