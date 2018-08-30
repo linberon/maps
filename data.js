@@ -36,12 +36,12 @@ let markers = [
 		image: "imgs/no_img.jpg"
 	},
 	{
-		name: "Red wolf",
+		name: "Red Wolf",
 		lat: 35.67,
 		lng: -76.48,
-		//status: "Critically endangered",
-		description: "Be patient, I'm still working on it",
-		//threats: "Hybridization with coyotes, human induced deaths.",
-		image: "imgs/no_img.jpg"
+		status: "Critically endangered",
+		description: "The wild population of Red Wolf is a result of reintroduction projects. The species were extinct in the wild in 1980, and were reintroduced years later in North Carolina. The area was selected because of the absence of Coyotes, as Red Wolf x Coyote hybridization is one of the main issues that led this species to demise. Scientific research started only when numbers were already low, so it is only assumed that their favoured natural habitat types were wetlands and swamps, remote from human activity, although they can thrive in a variety of settings. Captive breeding and reintroduction programmes are still ongoing. Currently there are more wolves known to be living in captivity than in the wild.",
+		threats: "Hybridization with coyotes, human induced deaths. Hybrids are sterilized to protect genetic integrity of the species.",
+		image: "imgs/Red_wolf_sm.jpg"
 	}
 ];
