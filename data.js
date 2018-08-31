@@ -12,7 +12,7 @@ let markers = [
 		name: "Hawaiian Crow",
 		lat: 19.57,
 		lng: -155.61,
-		//status: "",
+		//status: "Extinct in the wild",
 		description: "Be patient, I'm still working on it",
 		//threats: "",
 		image: "imgs/no_img.jpg"
