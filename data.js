@@ -12,10 +12,10 @@ let markers = [
 		name: "Hawaiian Crow",
 		lat: 19.57,
 		lng: -155.61,
-		//status: "Extinct in the Wild",
-		description: "Be patient, I'm still working on it",
-		//threats: "",
-		image: "imgs/no_img.jpg"
+		status: "Extinct in the Wild",
+		description: "The Hawaiian Crow is the most endangered corvid species in the world. The last two known wild individuals disappeared in 2002. Once one of the largest native bird populations in Hawaii, their role in the ecosystem is exceptional. Many native plants rely on them for seed dispersal and germination, as seeds are passed through the crow's digestive system. Without their main seed disperser, these plants could become a rarity in Hawaii's ecosystems. The Hawaiian Crow is omnivorous, but primarily feeds on fruits. They are known for resourcefulness, captive birds have been observed using twigs as tools to access food. <br><br>In attempt to save the species, captive breeding and reintroduction efforts have been made. A majority of these efforts have proved to be unsuccessful.",
+		threats: "Extensive habitat alteration, persecution by farmers, predation by introduced species, diseases carried by introduced species, inbreeding.",
+		image: "imgs/Hawaiian_crow_sm.jpg"
 	},
 	{
 		name: "Blue Poison Dart Frog",
