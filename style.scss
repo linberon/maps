@@ -2,6 +2,7 @@ $land: #78b3a0;
 $water: #2d7f82;
 $red: #f02139;
 $grey: #282828;
+$lightgrey: #b9b9b9;
 
 html,
 body {
@@ -149,12 +150,20 @@ body {
 //Sidenav modals
 
 .modal-content{
+  background-color: $grey;
+  color: $lightgrey;
   font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  color: $grey; 
   padding: 3vh;
   border-radius: 0;
   border: none;
+
+  .close {
+    color: $lightgrey;
+    text-shadow: none;
+  }
+  .close:hover {
+    color: $red !important;
+  }
 
   ul{
     list-style-type: none;
@@ -170,7 +179,7 @@ body {
     margin-left: -1em}
 
   a{
-    color: $grey;
+    color: $lightgrey;
     text-decoration: none;
   }
   a:hover{
@@ -194,6 +203,7 @@ body {
 
 .modal-header{
   font-family: 'Averia Sans Libre', cursive;
+  border-bottom: 1px solid $red;
   font-size: 24px;
   padding-left: 0;
   padding-right: 0;
@@ -209,7 +219,7 @@ body {
 
 #content{
   font-family: 'Montserrat', sans-serif;
-  color: $grey;
+  color: $lightgrey;
   border-radius: 0;
 }
 
@@ -221,7 +231,6 @@ body {
 
 #animalInfo, .info-text{
   font-size: 14px;
-  font-weight: bold;
 }
 
 .red-text{

@@ -105,12 +105,17 @@ body {
     padding-top: 3vh; }
 
 .modal-content {
+  background-color: #282828;
+  color: #b9b9b9;
   font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  color: #282828;
   padding: 3vh;
   border-radius: 0;
   border: none; }
+  .modal-content .close {
+    color: #b9b9b9;
+    text-shadow: none; }
+  .modal-content .close:hover {
+    color: #f02139 !important; }
   .modal-content ul {
     list-style-type: none;
     margin-bottom: 0;
@@ -122,7 +127,7 @@ body {
     width: 1em;
     margin-left: -1em; }
   .modal-content a {
-    color: #282828;
+    color: #b9b9b9;
     text-decoration: none; }
   .modal-content a:hover {
     color: #f02139;
@@ -140,6 +145,7 @@ body {
 
 .modal-header {
   font-family: 'Averia Sans Libre', cursive;
+  border-bottom: 1px solid #f02139;
   font-size: 24px;
   padding-left: 0;
   padding-right: 0;
@@ -150,7 +156,7 @@ body {
 
 #content {
   font-family: 'Montserrat', sans-serif;
-  color: #282828;
+  color: #b9b9b9;
   border-radius: 0; }
 
 #infoTitle {
@@ -159,8 +165,7 @@ body {
   padding-top: 10px; }
 
 #animalInfo, .info-text {
-  font-size: 14px;
-  font-weight: bold; }
+  font-size: 14px; }
 
 .red-text {
   color: #f02139;
