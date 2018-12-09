@@ -30,7 +30,7 @@ let markers = [
 		name: "Alagoas Curassow",
 		lat: -9.68,
 		lng: -36.26,
-		//status: "",
+		//status: "Extinct in the Wild",
 		description: "Be patient, I'm still working on it",
 		//threats: "",
 		image: "imgs/no_img.jpg"
@@ -61,5 +61,23 @@ let markers = [
 		description: "Many species of Partula are known under the name \"Polynesian tree snail\" (pictured: Partula rosea), endemic to Tahiti and the nearby islands. Their disappearance began with the introduction of giant African land snails. Soon the African snails have become pests, and a predator snail species was introduced to control them. Sadly, the carnivorous snail chose instead to hunt and eat the smaller, and slower native Partula species.</br></br> It is assumed that more than a hundred species of Partula once existed, now an estimated 70 percent of them are extinct in the wild, or have been lost. Today almost all the survivors live only in zoos.",
 		threats: "Predation by the introduced carnivorous Florida Rosy Wolfsnail.",
 		image: "imgs/Tree_snail_sm.jpg"
+	},
+	{
+		name: "Pink Pigeon",
+		lat: -20.40,
+		lng: 57.44,
+		//status: "Vulnerable",
+		description: "Be patient, I'm still working on it",
+		//threats: "",
+		image: "imgs/no_img.jpg"
+	},
+	{
+		name: "Black Rhinoceros",
+		lat: -18.88,
+		lng: 16.27,
+		//status: "Critically Endangered",
+		description: "Be patient, I'm still working on it",
+		//threats: "",
+		image: "imgs/no_img.jpg"
 	},
 ];
