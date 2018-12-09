@@ -4,7 +4,7 @@ let markers = [
 		lat: -18.67,
 		lng: -66.54,
 		status: "Vulnerable",
-		description: "The Andean bear is the only South American bear species. The other common name is Spectacled bear, thanks to their distinctive markings on the face, neck and chest. These elusive bears are native to the Andes mountain region, living in a wide variety of habitats, ranging from cloud forests to shrublands. They are omnivorous, although they mainly feed on fruits and different plants. Andean bears are known as the best climbers of all the bear species, they spend a significant amount of time on treetops searching for food, and they even sleep there.",
+		description: "The Andean bear is the only South American bear species. The other common name is Spectacled bear, thanks to their distinctive markings on the face, neck and chest. Each individual has a unique pattern, which makes them easily identifiable. <br><br>These elusive bears are native to the Andes mountain region, living in a wide variety of habitats, ranging from cloud forests to shrublands. They are omnivorous, although they mainly feed on fruits and different plants. Andean bears are known as the best climbers of all the bear species, they spend a significant amount of time in trees searching for food, and they even sleep there.<br><br>",
 		threats: "Habitat loss, illegal killing, and climate change. Bear parts are sold to be used in traditional oriental medicine.",
 		image: "imgs/Andean_bear_sm.jpg"
 	},
