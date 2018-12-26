@@ -48,10 +48,10 @@ let markers = [
 		name: "Guam Rail",
 		lat: 13.40,
 		lng: 144.75,
-		//status: "Extinct in the Wild",
-		description: "Be patient, I'm still working on it",
-		//threats: "",
-		image: "imgs/no_img.jpg"
+		status: "Extinct in the Wild",
+		description: "This flightless bird was widely distributed in most habitats on Guam. It forages along field edges and roadsides for snails, slugs, insects, geckos, vegetable matter, seeds and flowers. It is a year-round ground nester making it highly susceptible to predators, such as monitor lizards and rats. </br></br>The last individual in the wild died in 1987 following catastrophic declines owing to predation by the introduced Brown Tree Snake. The Guam rail had no experience with such a predator and lacked protective behaviours against the snake. Conservation efforts have been under way to establish a wild breeding colony on the nearby snake-free island of Rota.",
+		threats: "Habitat destruction, predation by the introduced Brown Tree Snake, rats, feral cats, pigs and monitor lizards.",
+		image: "imgs/Guam_rail_sm.jpg"
 	},
 	{
 		name: "Polynesian Tree Snail",
