@@ -30,10 +30,10 @@ let markers = [
 		name: "Alagoas Curassow",
 		lat: -9.68,
 		lng: -36.26,
-		//status: "Extinct in the Wild",
-		description: "Be patient, I'm still working on it",
-		//threats: "",
-		image: "imgs/no_img.jpg"
+		status: "Extinct in the Wild",
+		description: "The Alagoas Curassow (Mitu mitu) is a glossy-black, pheasant-like bird. It was formerly found in forests in Northeastern Brazil.</br></br> The extinction of this species had been forecast since its discovery. Ceaseless clearance of its lowland forest habitat, chiefly for sugarcane, and poaching had soon brought it to the verge of extinction. It is now extinct in the wild; there are about 130 individuals in captivity, many of them are hybrids with Razor-billed Curassows.</br></br> A reintroduction plan is being organized, a suitable forest remnant has been identified for future reintroduction efforts.",
+		threats: "Loss of habitat, poaching, hybridization with Amazonian Razor-billed Curassow.",
+		image: "imgs/Alagoas_curassow_sm.jpg"
 	},
 	{
 		name: "Red Wolf",
