@@ -66,17 +66,35 @@ let markers = [
 		name: "Pink Pigeon",
 		lat: -20.40,
 		lng: 57.44,
-		//status: "Vulnerable",
-		description: "Be patient, I'm still working on it",
-		//threats: "",
-		image: "imgs/no_img.jpg"
+		status: "Vulnerable",
+		description: "The Pink Pigeon is endemic to the Mascarene island of Mauritius, and is the only Mascarene pigeon that has not gone extinct. It was on the brink of extinction in 1991 when only 10 individuals remained, but its numbers have increased due to the efforts of the Durrell Wildlife Conservation Trust since 1977. While the population remains low, the IUCN downlisted the species from Critically endangered to Endangered in 2000, and then to Vulnerable in 2018. The book Golden Bats and Pink Pigeons by Gerald Durrell describes the conservation efforts.",
+		threats: "Destruction of its native forest habitat, extreme weather, introduced predators and wildlife diseases, inbreeding. ",
+		image: "imgs/Pink_pigeon_sm.jpg"
 	},
 	{
 		name: "Black Rhinoceros",
 		lat: -18.88,
 		lng: 16.27,
-		//status: "Critically Endangered",
-		description: "Be patient, I'm still working on it",
+		status: "Critically Endangered",
+		description: "The Black Rhinoceros is native to eastern and southern Africa. Although it's referred to as black, its colors vary from brown to grey. The Black Rhino is smaller than the White Rhino, it has a pointed upper lip, which it uses to grasp leaves and twigs when feeding. The White Rhinoceros has square lips used for eating grass. Black Rhinos are generally solitary, with the only strong bond between a mother and her calf. The species overall is classified as critically endangered, three subspecies have been declared extinct, and one is on the brink of extinction. Parks and reserves have been made for protecting the rhinos with armed guards keeping watch, but even still many poachers get through and harm the rhinos for their horns.",
+		threats: "Habitat changes, illegal poaching for the international rhino horn trade, and competing species. The horn is used in oriental medicine, and for ornamental purposes. Rhino horn is composed of keratine, and doesn't have any medicinal value.",
+		image: "imgs/Black_rhino_sm.jpg"
+	},
+	{
+		name: "Iberian Lynx",
+		lat: 38.37,
+		lng: -3.82,
+		//status: "",
+		description: "Be patient, I'm still working on it!",
+		//threats: "",
+		image: "imgs/no_img.jpg"
+	},
+	{
+		name: "La Palma Pupfish",
+		lat: 24.07,
+		lng: -100.08,
+		//status: "Extinct in the Wild",
+		description: "Be patient, I'm still working on it!",
 		//threats: "",
 		image: "imgs/no_img.jpg"
 	},
