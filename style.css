@@ -15,6 +15,8 @@ body {
   background-attachment: fixed;
   background-position: center;
   position: fixed;
+  display: flex;
+  justify-content: center;
   z-index: 4;
   height: 100vh;
   width: 100vw; }
@@ -23,14 +25,15 @@ body {
       background-image: url(imgs/maps_cover.jpg); } }
   #cover-page #play-btn {
     cursor: pointer;
-    width: 100%;
-    transform: translateY(92vh);
+    transform: translateY(75vh);
     height: 8vh;
     border: none;
     outline: none;
     font-size: 24px;
     background-color: transparent; }
   #cover-page #play-btn > a {
+    border: 2px solid white;
+    padding: 10px 40px;
     color: white;
     text-decoration: none; }
   #cover-page #play-btn:hover {
@@ -49,12 +52,13 @@ body {
   position: fixed;
   -webkit-transition: 0.5s;
   transition: 0.5s; }
-  #sidenav #togglebtn {
-    cursor: pointer;
-    color: #f02139;
-    font-size: 26px;
-    padding: 0 10px;
-    float: right; }
+
+#togglebtn {
+  cursor: pointer;
+  color: #f02139;
+  font-size: 26px;
+  padding: 0 10px;
+  float: right; }
 
 .sidenav-open {
   width: 200px;
