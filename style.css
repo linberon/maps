@@ -29,17 +29,18 @@ body {
     height: 8vh;
     border: none;
     outline: none;
-    font-size: 24px;
-    background-color: transparent; }
+    font-size: 22px;
+    opacity: 0.8;
+    border-radius: 2px;
+    background-color: white; }
   #cover-page #play-btn > a {
-    border: 2px solid white;
-    padding: 10px 40px;
-    color: white;
+    padding: 6px 30px;
+    color: #2d7f82;
     text-decoration: none; }
   #cover-page #play-btn:hover {
     text-decoration: none;
     opacity: 0;
-    transition: 3s; }
+    transition: 4s; }
 
 #map {
   height: 100vh;
@@ -94,6 +95,7 @@ body {
     font-size: 22px;
     padding: 4vh 6vh;
     border: none;
+    border-radius: 2px;
     outline: none;
     color: white; }
   .sidenav-open #donate-btn:hover {

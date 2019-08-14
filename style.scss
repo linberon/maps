@@ -36,27 +36,27 @@ body {
   }
 
   #play-btn{
-   
     cursor: pointer;
     transform: translateY(75vh);
     height: 8vh;
     border: none;
     outline: none;
-    font-size: 24px;
-    background-color: transparent;
+    font-size: 22px;
+    opacity: 0.8;
+    border-radius: 2px;
+    background-color: white;
   }
 
-  #play-btn > a {
-    border: 2px solid white;
-    padding: 10px 40px;
-    color: white;
+  #play-btn > a {  
+    padding: 6px 30px;
+    color: $water;
     text-decoration: none;
   }
 
   #play-btn:hover {
     text-decoration: none;
     opacity: 0;
-    transition: 3s; 
+    transition: 4s; 
   }
 }
 
@@ -131,6 +131,7 @@ body {
     font-size: 22px;
     padding: 4vh 6vh;
     border: none;
+    border-radius: 2px;
     outline: none;
     color: white;
   }
