@@ -81,18 +81,27 @@ let markers = [
 		image: "imgs/Black_rhino_sm.jpg"
 	},
 	{
+		name: "La Palma Pupfish",
+		lat: 24.07,
+		lng: -100.08,
+		status: "Extinct in the Wild",
+		description: "The tiny La Palma Pupfish was endemic to Charco la Palma, a small spring in Nuevo Leon, Mexico. This species was extirpated in the wild in 1994 and has not been reported since. Due to the total desiccation of the only known location where this species occurred, extirpation in the wild is beyond doubt. The same freshwater spring system was the home of three other pupfish, two of which has gone extinct, and three now-extinct invertebrates: an undescribed species of crayfish, and two freshwater snail species.</br></br>The La Palma Pupfish now survives in multiple captive collections in North America and Europe.</br>",
+		threats: "Habitat loss due to excessive groundwater pumping.",
+		image: "imgs/Pupfish_sm.jpg"
+	},
+	{
 		name: "Iberian Lynx",
 		lat: 38.37,
 		lng: -3.82,
-		//status: "",
+		//status: "Endangered",
 		description: "Be patient, I'm still working on it!",
 		//threats: "",
 		image: "imgs/no_img.jpg"
 	},
 	{
-		name: "La Palma Pupfish",
-		lat: 24.07,
-		lng: -100.08,
+		name: "Scimitar Oryx",
+		lat: 14.96,
+		lng: 18.54,
 		//status: "Extinct in the Wild",
 		description: "Be patient, I'm still working on it!",
 		//threats: "",
